@@ -1,16 +1,13 @@
 .app {
-    width: 60%;
-    border: 2px solid black;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 5px;
     text-align: center;
-    padding: 10px;
 }
 
 .users {
     border: 2px solid green;
-
 }
 
 .user {
@@ -24,4 +21,63 @@
     margin: 10px;
 }
 
+#topics {
+    text-align: left;
+}
 
+#topics a {
+    color: black;
+    text-decoration: none;
+}
+
+#topics p {
+    font-size: 1rem;;
+}
+
+#topics > div {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 2fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#topics div a > img {
+    width: 30px;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+#topics div > div {
+  text-align: center;
+}
+
+#topics div div:nth-of-type(1) {
+    overflow: hidden;
+}
+
+#topics div div:nth-of-type(2) {
+    border-left: 2px solid black;
+}
+
+#topics div div:nth-of-type(3) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#topics div div:nth-of-type(4) {
+    border-right: 2px solid black;
+}
+
+#topics div div:nth-of-type(5) {
+    width: 140%;
+    margin-left: 5px;
+}
+
+#topics div:nth-child(1) div {
+    text-align: center;
+    border: none;
+    border: 10px;
+  }
